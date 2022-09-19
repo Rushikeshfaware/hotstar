@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon (3).ico">
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script> -->
+   
+    
+<link>
+
+@import
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+  
+    <title>Hotstar</title>
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        /* background-color:black; */
+    }
+    body{
+         background-color:rgb(26, 15, 51); 
+    }
+    
+    .nav{
+        position: sticky;
+    }
+    
+    p{
+        font-size: large;
+    }
+    
+       .Top-container{
+        background-color: rgb(26, 15, 51);
+        height: 10vh;
+        position: relative;
+        top: 0;
+        
+    }
+    .search{
+font-size: large;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+width: 20vw; 
+height: 3.5vh;
+ 
+position: absolute;
+left: 64vw;
+top: 4vh;
+border: none;
+text-decoration: underline;
+
+}
+/* .search:hover{
+    cursor: pointer; */
+    
+
+.x{
+    position: absolute;
+left: 45vh;
+top: 2vh;
+font-size: 24px ;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ul li{
+color: white;
+display:inline-block;
+padding: 10px;
+
+
+}
+.x li a{
+    color: white;
+    text-decoration: none;
+}
+.x li:hover{
+    cursor: pointer;
+}
+@media only screen and (max-width:600px) {
+    .x{
+        visibility:collapse;
+        display: none;
+
+    }
+    .search{
+        width: 3vw;
+        display: flex;
+    
+
+    
+        
+    }
+    .menu {
+  width: 3px;
+  height: 3px;
+  background-color: rgb(252, 248, 248);
+  margin: 6px 30px;
+
+}
+    .myButton1{
+        display: flex;
+        right: 0;
+        width: 6vw;
+        
+    }
+    img{
+        
+         height: 5vh;   
+         width: 10vh
+         
+    }
+    
+}
+  img{
+      padding: 10px 10px 0 ;
+      position: absolute;
+      left: 6vw;
+      top: 0vh;
+  }
+  .btn{
+      padding: 0 20px 0 20px;
+      position: absolute;
+      right: 1vw;
+      
+  }
+   .kids{
+    font-size: 2rem;
+    color: rgb(240, 107, 59);
+    font-family: 'Titan One', cursive;;
+
+  }
+  /* <a href="#" class="myButton">blue</a> */
+
+.myButton {
+	box-shadow:inset 0px -3px 7px 0px #29bbff;
+	background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+	background-color:#2dabf9;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:10px;
+	padding:9px 23px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+    position: absolute;
+    right: 7vw;
+    top: 3.6vh;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.myButton1 {
+	box-shadow:inset 0px -3px 7px 0px #181d1f;
+	background:linear-gradient(to bottom, #0e0e0f 5%, #171818 100%);
+	background-color:#191a1b;
+	border-radius:3px;
+	border:1px solid #0b0e07;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:10px;
+	padding:9px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+    position: absolute;
+    right:2vw;
+    top: 35%;
+
+}
+.myButton1:hover {
+	background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+	background-color:#0688fa;
+}
+.myButton1:active {
+	position:relative;
+	top:1px;
+}
+.m{
+    position: absolute;
+  top: 25%; 
+}
+.menu {
+  width: 30px;
+  height: 5px;
+  background-color: rgb(252, 248, 248);
+  margin: 6px 30px;
+  
+
+}
+.menu:hover{
+ cursor: pointer;
+
+
+}
+.submenu {
+color: white;
+display: none;
+
+}
+.submenu ul li{
+    display: block;
+} 
+.m:hover .submenu {
+    display: block;
+    position: absolute;
+    background-color: rgb(137, 143, 137);
+    margin-top: 15px;
+    margin-left: -0px;
+    
+
+
+
+}.submenu1 {
+color: white;
+display: none;
+
+}
+.submenu1 ul li{
+    display: block;
+} 
+.y:hover .submenu1 {
+    display: block;
+    position: absolute;
+    background-color: rgb(13, 7, 43);
+    margin-top: 15px;
+    margin-left: 0px;
+    font-size: 20px;
+
+}
+.submenu2{
+    color: white;
+    display: none;
+
+}
+.submenu2 ul li{
+    display: block;
+}
+.b:hover .submenu2{
+    display: block;
+    position: absolute;
+    background-color: #0e1938;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: 0;
+
+}
+.submenu3{
+    color: white;
+    display: none;
+}
+.submenu3 ul li{
+    display: block;
+
+}
+.c:hover .submenu3{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-top: 0;
+    font-size: 20px;
+    background-color: #180d44;
+}
+.serial{
+    margin: 5vh auto ;
+    background-color: rgb(8, 8, 37);
+    width: 90vw;
+    height: 60vh;
+    background-image:url('dharmaveer.jpg' )  ;
+    background-repeat: no-repeat no-repeat;
+    background-position: right;
+    /* background-size: 100vh; */
+    
+    
+}
+.subscriber{
+    color:goldenrod;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 0 0 40px;
+}
+.serialName{
+    color: white;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px 0 10px 40px;
+}
+.info{
+    color: white  ;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 0 0 40px;
+    padding-right: 6px;
+}
+.title{
+    color: rgb(219, 209, 209);
+    margin: 20px 0 0 40px ;
+    width: 30vw;
+    font-size: 17px;
+}
+.nn{
+    background-color: rgb(8, 8, 37);
+    width: 180px;
+    height: 40px;
+    margin: 40px 0 0 100px   ;
+}
+.nn .watch {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nn .date {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.share{
+    background-color:rgb(8, 8,37);
+    position: absolute;
+    right: 870px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.serial1{
+    margin: 5vh auto ;
+    background-color: rgb(8, 8, 37);
+    width: 90vw;
+    height: 60vh;
+    background-image:url('maxresdefault.jpg' )  ;
+    background-repeat: no-repeat no-repeat;
+    background-position: right;
+    background-size: 110vh;
+    margin-top: 150px;
+    
+    
+}
+.subscriber1{
+    color:goldenrod;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 0 0 40px;
+}
+.serialName1{
+    color: white;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px 0 10px 40px;
+}
+.info1{
+    color: white  ;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 0 0 40px;
+    padding-right: 6px;
+}
+.title1{
+    color: rgb(219, 209, 209);
+    margin: 20px 0 0 40px ;
+    width: 30vw;
+    font-size: 17px;
+}
+.nn1{
+    background-color: rgb(8, 8, 37);
+    width: 180px;
+    height: 40px;
+    margin: 40px 0 0 100px   ;
+}
+.nn1 .watch {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nn1 .date {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.share1{
+    background-color:rgb(8, 8,37);
+    position: absolute;
+    right: 900px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.serial2{
+    margin: 5vh auto ;
+    background-color: rgb(8, 8, 37);
+    width: 90vw;
+    height: 60vh;
+    background-image:url('Devmanus-Poster.jpg' )  ;
+    background-repeat: no-repeat no-repeat;
+    background-position: right;
+    background-size: 100vh;
+    margin-top: 200px;
+    
+    
+}
+.subscriber2{
+    color:goldenrod;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 0 0 40px;
+}
+.serialName2{
+    color: white;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px 0 10px 40px;
+}
+.info2{
+    color: white  ;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 0 0 40px;
+    padding-right: 6px;
+}
+.title2{
+    color: rgb(219, 209, 209);
+    margin: 20px 0 0 40px ;
+    width: 30vw;
+    font-size: 17px;
+}
+.nn2{
+    background-color: rgb(8, 8, 37);
+    width: 180px;
+    height: 40px;
+    margin: 40px 0 0 100px   ;
+}
+.nn2 .watch {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nn2 .date {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.share2{
+    background-color:rgb(8, 8,37);
+    position: absolute;
+    right: 870px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.serial3{
+    margin: 5vh auto ;
+    background-color: rgb(8, 8, 37);
+    width: 90vw;
+    height: 60vh;
+    background-image:url('Lagir Jhala Ji Cast and Crew लागीर झालं जी.png' )  ;
+    background-repeat: no-repeat no-repeat;
+    background-position: right;
+    background-size: 100vh;
+    margin-top: 200px;
+    
+    
+}
+.subscriber3{
+    color:goldenrod;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 0 0 40px;
+}
+.serialName3{
+    color: white;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px 0 10px 40px;
+}
+.info3{
+    color: white  ;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 0 0 40px;
+    padding-right: 6px;
+}
+.title3{
+    color: rgb(219, 209, 209);
+    margin: 20px 0 0 40px ;
+    width: 30vw;
+    font-size: 17px;
+}
+.nn3{
+    background-color: rgb(8, 8, 37);
+    width: 180px;
+    height: 40px;
+    margin: 40px 0 0 100px   ;
+}
+.nn3 .watch {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nn3 .date {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.share3{
+    background-color:rgb(8, 8,37);
+    position: absolute;
+    right: 870px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.serial4{
+    margin: 5vh auto ;
+    background-color: rgb(8, 8, 37);
+    width: 90vw;
+    height: 60vh;
+    background-image:url('Tuzhat-Jeev-Rangala-Poster.jpg' )  ;
+    background-repeat: no-repeat no-repeat;
+    background-position: right;
+    background-size: 100vh;
+    margin-top: 150px;
+    
+    
+}
+.subscriber4{
+    color:goldenrod;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 0 0 40px;
+}
+.serialName4{
+    color: white;
+    font-size: 30px;
+    font-family:Arial, Helvetica, sans-serif;
+    padding: 10px 0 10px 40px;
+}
+.info4{
+    color: white  ;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 10px 0 0 40px;
+    padding-right: 6px;
+}
+.title4{
+    color: rgb(219, 209, 209);
+    margin: 20px 0 0 40px ;
+    width: 30vw;
+    font-size: 17px;
+}
+.nn4{
+    background-color: rgb(8, 8, 37);
+    width: 180px;
+    height: 40px;
+    margin: 40px 0 0 100px   ;
+}
+.nn .watch4 {
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nn .date4 {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
+.share4{
+    background-color:rgb(8, 8,37);
+    position: absolute;
+    right: 870px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container1{
+    background-color: rgb(8, 8, 37);
+    position: relative;
+    top: 20vh;
+    left: 0;
+    margin: 0 0 ;
+    padding: 0;
+    display: inline-flex;
+    
+}
+
+.latest{display: inline;
+    color: white;
+    position: relative;
+    top: 19vh;
+}  
+
+.moviesandserial{
+    height:30vh ;
+    width: 11vw;
+    background-color: #fff;
+ margin: 0 10px 0 0;
+ border-radius: 10px;
+ background-image: url('n6xvzKJFd4aOXNTr0iY3c1zEkqC.jpg');
+ background: cover;
+}
+.hindi{
+    color: white;
+    position: absolute;
+    bottom: 0vh;
+    left: 4vw;
+}
+.moviesandserial:hover .hindi{
+    visibility: hidden;
+}
+.moviesandserial:hover{
+    
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+
+ /* .infoplus{
+    background-color:rgb(8, 8, 37);
+    color: white;
+    font-size: 10px;
+    position:absolute;
+    bottom: vh;
+}
+.infoplush4{
+    background-color:rgb(8, 8, 37);
+    color: white;
+    
+} */
+.moviesandserial1{
+    height:30vh ;
+    width: 11vw;
+    background-color: rgb(4, 4, 4);
+    margin: 0 10px 0 0;
+    border-radius: 10px;
+ background-image: url('th.jpg');
+ background: cover;
+}
+.hindi1{
+    color: white;
+    position: absolute;
+    bottom: 0vh;
+left:15vw ;
+     
+}
+.moviesandserial1:hover{
+    
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.moviesandserial1:hover .hindi1{
+    visibility: hidden;
+}
+.moviesandserial2{
+    height:30vh ;
+    width: 13vw;
+    background-color: #fff;
+    margin: 0 10px 0 0;
+    border-radius: 10px;
+ background-image: url('th (6).jpg');
+ background-repeat: repeat;
+ background: cover;
+}.hindi2{
+    color: white;
+    position: absolute;
+    bottom: 0vh;
+    left: 28vw;
+}
+.moviesandserial2:hover{
+    
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.moviesandserial2:hover .hindi2{
+    visibility: hidden;
+}
+.moviesandserial3{
+    height:30vh ;
+    width: 13vw;
+    background-color: #fff; margin: 0 10px 0 0;
+    border-radius: 10px;
+ background-image: url('th (7).jpg');
+ background: cover;
+}
+.hindi3{
+    color: white;
+    position: absolute;
+    bottom: 0vh;
+    left: 42vw;
+}
+.moviesandserial3:hover{
+    
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.moviesandserial3:hover .hindi3{
+    visibility: hidden;
+}
+.moviesandserial4{
+    height:30vh ;
+    width: 13vw;
+    background-color: #fff; 
+    margin: 0 10px 0 0;
+    border-radius: 10px;
+ background-image: url('th (9).jpg');
+ background: cover;
+}.hindi4{
+    color: white;
+    position: absolute;
+    bottom: 0vh;
+    left: 55vw;
+}
+.moviesandserial4:hover{
+    
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.moviesandserial4:hover .hindi4{
+    visibility: hidden;
+}
+.moviesandserial5{
+    height:30vh ;
+    width: 13vw;
+    background-color: #fff;
+    margin: 0 10px 0 0;
+    border-radius: 10px;
+ background-image: url('th (2).jpg');
+ background: cover;
+}
+.hindi5{
+    color: white;
+    position: absolute;
+    bottom: 0vh;
+    left: 69vw;
+}
+.moviesandserial5:hover{
+    
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.moviesandserial5:hover .hindi5{
+    visibility: hidden;
+}
+.moviesandserial6{
+    height:30vh ;
+    width: 13vw;
+    background-color: #fff;
+    border-radius: 10px;
+ background-image: url('th (10).jpg');
+ background: cover;
+}.hindi6{
+    color: white;
+    position: absolute;
+    left: 83vw;
+    bottom: 0;    
+}
+.moviesandserial6:hover{
+    
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.moviesandserial6:hover .hindi6{
+    visibility: hidden;
+}
+.container2{
+    background-color: rgb(8, 8, 37);
+    position: relative;
+    top: 25vh;
+    left: 0;
+    margin: 0 0 ;
+    padding: 0;
+    display: inline-flex;}
+    .new{
+        display: inline;
+    color: white;
+    position: relative;
+    top: 23vh;
+ 
+    }
+.movies{
+    height:10vw ;
+    width: 35vh;
+    background-color: #fff;
+    border-radius: 10px;
+ background-image: url('th (4).jpg');
+ background-repeat: repeat;
+ margin: 0 10px 0 0;
+}
+ .es{
+    color: rgb(254, 254, 255);
+    position: absolute;
+    bottom: 0vh;
+    left: 5vw;
+}
+.movies:hover{
+    
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.movies:hover .es{
+    visibility: hidden;
+}
+.movies1{
+    height:10vw ;
+    width: 35vh;
+    background-color: #fff;
+    border-radius: 10px;
+ background-image: url('th (5).jpg');
+ background-repeat: no-repeat;
+ margin: 0 10px 0 0;
+}
+ .es1{
+    color: rgb(235, 236, 241);
+    position: absolute;
+    bottom: 0vh;
+    left: 22vw;
+}
+.movies1:hover{
+    
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.movies1:hover .es1{
+    visibility: hidden;
+}
+.footer{  display: block;
+    position: relative;
+    bottom: -30vh;
+    height: vh;
+
+}
+.movies2{
+    height:10vw ;
+    width: 35vh;
+    background-color: #fff;
+    border-radius: 10px;
+ background-image: url('th (8).jpg');
+ background-repeat: no-repeat;
+ margin: 0 10px 0 0;
+}
+ .es2{
+    color: rgb(232, 234, 240);
+    position: absolute;
+    bottom: 0vh;
+    left: 38vw;
+}
+.movies2:hover{
+    
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.movies2:hover .es2{
+    visibility: hidden;
+}
+.movies3{
+    height:10vw ;
+    width: 35vh;
+    background-color: #fff;
+    border-radius: 10px;
+ background-image: url('RIDDICK-Image-09.jpg');
+ background-repeat: repeat;
+ margin: 0 10px 0 0;
+}
+ .es3{
+    color: rgb(228, 231, 241);
+    position: absolute;
+    bottom: 0vh;
+    left: 55vw;
+}
+.movies3:hover{
+    
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.movies3:hover .es3{
+    visibility: hidden;
+}
+.movies4{
+    height:10vw ;
+    width: 35vh;
+    background-color: #fff;
+    border-radius: 10px;
+ background-image: url('th (3).jpg');
+ background-repeat: repeat;
+ margin: 0 10px 0 0;
+}
+ .es4{
+    color: rgb(232, 233, 239);
+    position: absolute;
+    bottom: 0vh;
+    left: 71vw;
+}
+.movies4:hover{
+    
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.movies4:hover .es4{
+    visibility: hidden;
+}
+.movies5{
+    height:10vw ;
+    width: 35vh;
+    background-color: #fff;
+    border-radius: 10px;
+ background-image: url('th (1).jpg');
+ background-repeat: repeat;
+ margin: 0 10px 0 0;
+}
+ .es5{
+    color: rgb(250, 251, 255);
+    position: absolute;
+    bottom: 0vh;
+    left: 88vw;
+}
+.movies5:hover{
+    
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.movies5:hover .es5{
+    visibility: hidden;
+}
+.movies6{
+    height:10vw ;
+    width: 35vh;
+    background-color: #fff;
+    border-radius: 10px;
+ background-image: url('Tuzhat-Jeev-Rangala-Poster.jpg');
+ background-repeat: no-repeat;
+ margin: 0 10px 0 0;
+}
+ .es6{
+    color: rgb(7, 13, 39);
+    position: absolute;
+    bottom: 0vh;
+    left: 5vw;
+}
+.movies6:hover{
+    
+  -ms-transform: scale(1.2); /* IE 9 */
+  -webkit-transform: scale(1.2); /* Safari 3-8 */
+  transform: scale(1.2);
+}
+.movies6:hover .es6{
+    visibility: hidden;
+}
+.footerheader a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    
+}
+.para{
+    font-size: 12px;
+    color: white;
+    width: 30vw;
+    padding: 10px 0 0 10px;
+}
+.footerheader a:hover{
+    color: blue;
+}
+.contact{
+    color: rgb(255, 251, 251);
+    position: absolute;
+    right: 30vw;
+    top: 4vh;
+}
+.download{
+    color: rgb(207, 201, 201);
+    position: absolute;
+    right: 5vw;
+    top: 4vh;
+}
+.playstore{
+    color: rgb(207, 201, 201);
+    position: absolute;
+    right: 8vw;
+    top: 8vh;
+    width: 110px;
+    font-size: 18px;
+    color: white;
+    background-color:rgb(17, 29, 79);
+    
+}
+.playstore a{
+    text-decoration: none;
+    font-size:10px ;
+    color: white;
+
+}
+.playstore:hover{
+    cursor: pointer;
+    background-color: #0688fa;
+}
+.appstore:hover{
+    cursor: pointer;
+    background-color: #0688fa;
+}
+.appstore{
+    color: rgb(207, 201, 201);
+    position: absolute;
+    right: 1vw;
+    top: 8vh;
+    width: 100px;
+    font-size: 18px;
+    color: white;
+    background-color:rgb(17, 29, 79);
+}
+.appstore a{
+    text-decoration: none;
+    font-size:10px ;
+    color: white;
+
+}
+
+ 
+</style>
+<body>
+    <div class="nav">
+    <div class="Top-container">
+        <div class="m"><div class="menu"></div>
+        <div class="menu"></div>
+        <div class="menu"></div>
+        <div class="submenu">
+            <ul>
+                <li class="a">Channels</li>
+                <li class="a">Languages</li>
+                <li class="a">Genrus</li>
+            </ul></div>
+        </div>
+    <p><img src="disney_plus_hotstar_logo_1583901149861.webp" alt="" width="150px" height="55px"></p>
+   <div class="li"> <label for=""><ul class="x">
+    <li class="y" > <a href="3">TV</a> 
+    <div class="submenu1">
+        <ul class="tv">
+            <li class="tv1">others shows</li>
+            <li class="tv1">Hotstar speacial </li>
+            <li class="tv1">Quix</li>
+            <li class="tv1">Star Jalsha</li>
+            <li class="tv1">StarPlus</li>
+            <li class="tv1">Star Vijay</li>
+            <li class="tv1">Star Bharat</li>
+            <li class="tv1">Asianet</li>
+            <li class="tv1">More....</li>
+        </ul>
+    </div></li>
+        <li class="b" > <a href="3">Movies</a> 
+            <div class="submenu2">
+                <ul>
+                    <li>Odia</li>
+                    <li>Hindi</li>
+                    <li>Bengali</li>
+                    <li>Telugu</li>
+                    <li>Malyalam</li>
+                    <li>Tamil</li>
+                    <li>Marathi</li>
+                    <li>English</li>
+                    <li>Kannada</li>
+                </ul>
+            </div>
+        </li>
+        <li class="c" > <a href="3">Sports</a>
+            <div class="submenu3">
+                <ul>
+                <li>Cricket</li>
+                <li>Tennis</li>
+                <li>Football</li>
+                <li>Formula 1</li>
+                <li>Hockey</li>
+                <li>Formula E</li>
+                <li>Martial Arts</li>
+                <li>Khelo India</li>
+                <li>Kabbadi</li>
+                <li>American Football</li>
+                <li>Athletics</li>
+                <li>Golf</li></ul>
+            </div>
+         </li>
+        <li > <a href="3">Disney+</a> </li>
+        <li class="kids" > Kids</li>
+    </ul></label></div>
+    <input type="text" class="search" id="search" placeholder="Search">
+    <button class="myButton">SUBSCRIBE</button>
+    <button class="myButton1">Log in</button>
+</div></div>
+<div class="serial">
+    <div class="title">
+    <p  class="subscriber">SUBSCRIBER</h5>
+    <p  class="serialName"> Swarajya Rakshak Sambhaji</p>
+    <p class="info">  772 episodes. Historical Drama.Marathi.ZEE Marathi
+        </p>
+        <p class="title">Marathi TV Series on life of Great Chatrapati Sambhaji Maharaj.Swarajyarakshak Sambhaji is an Indian historical drama based on the life of Sambhaji. The series is directed by Vivek Deshpande and Kartik Rajaram Kendhe and is written by Pratap Gangavane. It is produced by Amol Kolhe, Vilas Sawant and Sonali Ghanashyam Rao under the banner of Jagadamb Creations.</p>
+  <div class="nn"><p class="watch">Watch Episode</p>
+   <p class="date">S01 E01. 24 September 2017</p>
+   <p class="share">SHARE</p></div> 
+</div>
+<!-- <div class="serial1">
+    <div class="title1">
+    <p  class="subscriber1">SUBSCRIBER</h5>
+    <p  class="serialName1"> Man Udu Udu Zhala</p>
+    <p class="info1">  73 Episodes 2021 RomanceDrama U/A
+        </p>
+        <p class="title1">
+            Sparks fly when an unruly Indra gets smitten by a docile Deepali, and a roller-coaster ride of love, drama and disagreements begins..</p>
+  <div class="nn1"><p class="watch">Watch Episode</p>
+   <p class="date1">S01 E01. 30 August 2021</p>
+   <p class="share1">SHARE</p></div> 
+</div> 
+<div class="serial2">
+    <div class="title2">
+    <p  class="subscriber2">SUBSCRIBER</h5>
+    <p  class="serialName2">Devmanus</p>
+    <p class="info2">  303 Episodes2020 CrimeThrillerDrama U/A
+        </p>
+        <p class="title2">
+Doctor Ajit Kumar, under the facade of being noble and kind, cruelly plays with the lives of innocent people. Will Inspector Divya Singh be able to expose him?</p>
+  <div class="nn2"><p class="watch">Watch Episode</p>
+   <p class="date2">S01 E01. 20 December 2021</p>
+   <p class="share2">SHARE</p></div> 
+</div>
+<div class="serial3">
+    <div class="title3">
+    <p  class="subscriber">SUBSCRIBER</h5>
+    <p  class="serialName3">Lagira Zhala Jee</p>
+    <p class="info3">  688 Episodes2017 RomanceDramaU/A
+        </p>
+        <p class="title3">
+          
+            Lagira Zhala Jee is a Marathi romantic drama starring Nitish Chavan, Shivani Baokar and Kiran Gaikwad. The story revolves around Ajinkya, a youngster from Satara, who aspires to join the Indian Army. He falls in love with Sheetal, a free-spirited girl, however, his</p>
+  <div class="nn3"><p class="watch">Watch Episode</p>
+   <p class="date3">S01 E01. 1 May 2017</p>
+   <p class="share3">SHARE</p></div> 
+</div>
+<div class="serial4">
+    <div class="title4">
+    <p  class="subscriber">SUBSCRIBER</h5>
+    <p  class="serialName4">Tujhyat Jeev Rangala</p>
+    <p class="info4"> 1272 Episodes2016 RomanceDramaU/A
+        </p>
+        <p class="title4">
+The love story of an uneducated wrestler, Rana, and a school teacher, Anjali. Ranas sister-in-law, Nandita, is greedy for wealth and tries to maintain her dominance at any cost.</p>
+  <div class="nn4"><p class="watch">Watch Episode</p>
+   <p class="date4">S01 E01. 3 Octomber 2016</p>
+   <p class="share4">SHARE</p></div> 
+</div> -->
+<h2 class="latest">Latest And Trending</h2>
+<div class="container1">
+
+    <div class="moviesandserial">
+        <p class="hindi">हिन्दी</p>
+        <!-- <p class="infoplus">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dignissimos vitae 
+            <h4  class="infoplush4">+ Watch Later</h4></p> -->
+    </div>
+    <div class="moviesandserial1">
+        <p class="hindi1">हिन्दी</p>
+        <!-- <p class="infoplus">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dignissimos vitae 
+            <h4>+ Watch Later</h4> -->
+        </div>
+    
+    <div class="moviesandserial2">  <p class="hindi2">हिन्दी</p>
+    </div>
+    <div class="moviesandserial3">  <p class="hindi3">हिन्दी</p>
+    </div>
+    <div class="moviesandserial4">  <p class="hindi4">हिन्दी</p>
+    </div>
+    <div class="moviesandserial5">  <p class="hindi5">हिन्दी</p>
+    </div>
+    <div class="moviesandserial6">  <p class="hindi6">हिन्दी</p>
+    </div>
+    <!-- <div class="moviesandserial7">  <p class="hindi5">हिन्दी</p>
+    </div> -->
+    <!-- <div class="moviesandserial8"></div> -->
+    <!-- <div class="moviesandserial4"></div> -->
+</div>
+<h2 class="new">New And Upcoming</h2>
+<div class="container2">
+    <div class="movies"><p class="es">E01 S01</p></div>
+    <div class="movies1"><p class="es1">E01 S01</p></div>
+    <div class="movies2"><p class="es2">E01 S01</p></div>
+    <div class="movies3"><p class="es3">E01 S01</p></div>
+    <div class="movies4"><p class="es4">E01 S01</p></div>
+    <div class="movies5"><p class="es5">E01 S01</p></div>
+    <!-- <div class="movies6"><p class="es6">E01 S01</p></div> -->
+
+    
+    <!-- <div class="movies"></div> -->
+    <!-- <div class="movies"></div> -->
+</div>
+<div class="footer">
+    <p class="footerheader"><a href="#">AboutDisney+Hotstar</a> <a href="#">Terms Of Use</a><a href="#">Privacy Policy </a> <a href="#">FAQ</a> <a href="#">Feedback</a><a href="#">Careers</a></p>
+    <p class="para">
+        © 2022 STAR. All Rights Reserved. HBO, Home Box Office and all related channel and programming logos are service marks of, and all related programming visuals and elements are the property of, Home Box Office, Inc. All rights reserved</p>
+        
+        <p class="contact">Contcat with us <i class="fa-brands fa-facebook-square"> </i></p> 
+        <p class="download">Disney+Hotstar</p>
+        <button class="playstore"> <a href="" class="get">Get It On</a> GooglePlay </button>
+        <button class="appstore"> <a href="" class="get">Download On the</a> App Store</button>
+    </div>
+
+</body>
+</html>
